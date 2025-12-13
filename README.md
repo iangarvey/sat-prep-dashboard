@@ -61,7 +61,7 @@ Every element follows one principle: **Only look behind to figure out what to do
 - Highlights strengths and weaknesses by color
 - Directly informs Today's Priority and Suggested Practice Sessions by surfacing weakest skills
 
-**Today's Priority: The One Thing Rule:**
+**Today's Priority: The One Thing Rule**
 ```typescript
 // If you can only do ONE study session today:
 Geometry & Trigonometry    // Highest leverage topic
