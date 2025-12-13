@@ -43,7 +43,7 @@ Every element follows one principle: **Only look behind to figure out what to do
 - **Access to all test data** → Practice + official scores in one place
 - **Progress timeline** → Visual story of improvement
 
-**Quick Stats: The Story of Your Effort:**
+**Quick Stats: The Story of Your Effort**
 - 42 hours studied → "You've invested this much"
 - 1,240 questions answered → "You've practiced this much"  
 - 73% accuracy → "You're answering correctly most of the time"
@@ -53,7 +53,7 @@ Every element follows one principle: **Only look behind to figure out what to do
 ### The Very Next Steps: Proficiency, Priority & Practice (1st Tab)
 **Expanded by default** → Forces focus on what matters NOW
 
-**Skills Map: The "Why" Behind Recommendations:**
+**Skills Map: The "Why" Behind Recommendations**
 - Clear breakdown of SAT skill areas and mastery levels
 - Highlights strengths and weaknesses by color
 - Directly informs Today's Priority and Suggested Practice Sessions by surfacing weakest skills
@@ -68,16 +68,16 @@ High Impact (15+ points)  // Maximum ROI
 ```
 *Philosophy: One clear, high-impact action is better than ten vague suggestions*
 
-**Suggested Practice: Choose Your Adventure:**
-- [15 min] Vocabulary Review → "I'm tired but want momentum"
-- [25 min] Geometry Proofs → "I have a standard study window"
-- [45 min] Full Math Section → "I'm fresh and want deep practice"
+**Suggested Practice Sessions: Choose Your Adventure**
+- [25 min] Quick Math Boost → "I'm tired but want momentum"
+- [60 min] Geometry Proofs → "I have a standard study window"
+- [150 min] Practice Test → "I'm fresh and want deep practice"
 *User autonomy: Choose based on real-life constraints*
 
 ### Deeper Dive: Feedback & AI Insights (2nd Tab)
 **Collapsed by default** → Available when you want insight, not forced
 
-**Weakness Analysis → Actionable Feedback:**
+**Weakness Analysis → Actionable Feedback**
 ```typescript
 // Traditional: "You're weak at Geometry"
 // Our approach: "Geometry (48%) → Cost: 40 points → Try: Draw diagrams first"
@@ -85,12 +85,12 @@ High Impact (15+ points)  // Maximum ROI
 - **Study technique suggestions** tailored to specific weaknesses
 - **Point cost estimates** show real impact of improvement
 
-**AI Insights: Your Personal Study Coach:**
+**AI Insights: Your Personal Study Coach**
 - "You solve math 40% faster in mornings" → Schedule optimization
 - "Reading retention peaks at 25-minute mark" → Session length guidance
 - **Privacy-first**: Insights from study patterns, not personal data
 
-**Progress Projection Graph:**
+**Progress Projection Graph**
 - Current trajectory based on improvement rate
 - Estimated next score if suggestions followed
 - Compare projected test score to average score ranges of multiple colleges in next tab
@@ -215,7 +215,7 @@ In educational tools where student trust and limited study time are paramount, f
 - Professional engineering practices that scale in team environments
 - Product thinking that prioritizes what matters most to users
 
-This focused test validates that when a student opens their dashboard with only 20 minutes to study, they'll immediately understand which topic deserves their attention and why.
+This focused test validates that when a student opens their dashboard with only 25 minutes to study, they'll immediately understand which topic deserves their attention and why.
 
 ## 🚀 Getting Started
 
@@ -253,7 +253,7 @@ npm run build
 **Focus:** UX facade that tells a complete, actionable story
 
 **Addressing Achievable's Mission:**
-> "Preparing for professional exams is tough... doesn't fit our mobile lifestyles or give us insight into what we know"
+> "To make exam preparation effective, accessible, and efficient for busy professionals and students through adaptive learning technology that fits mobile lifestyles and provides real insight into knowledge gaps."
 
 **This dashboard demonstrates:**
 - ✅ **Mobile-optimized** for real student life
