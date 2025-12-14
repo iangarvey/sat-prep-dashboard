@@ -53,22 +53,22 @@ export default function HeaderWithScore({
   return (
     <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white shadow-lg">
       {/* Main Header - Always Visible */}
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-3">
-          <h1 className="text-3xl font-bold">Keep up the good work, {name}! 🎯</h1>
-          <div className="flex gap-6">
-            <div className="flex flex-col items-center w-full min-w-[170px]">
+      <div className="p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-4">
+          <h1 className="text-2xl sm:text-3xl font-bold">Keep up the good work, {name}! 🎯</h1>
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+            <div className="flex flex-col items-center w-full min-w-0 sm:min-w-[170px]">
               <span className="text-xs font-semibold uppercase tracking-wide text-fuchsia-200 mb-1 text-center w-full">Streak</span>
-              <div className="flex items-center gap-2 px-4 py-2 h-12 min-w-[260px] rounded-full bg-gradient-to-r from-fuchsia-500 via-pink-500 to-yellow-400 shadow-lg border-2 border-fuchsia-200/40 w-full justify-center">
+              <div className="flex items-center gap-2 px-2 sm:px-4 py-2 h-12 min-w-0 sm:min-w-[260px] rounded-full bg-gradient-to-r from-fuchsia-500 via-pink-500 to-yellow-400 shadow-lg border-2 border-fuchsia-200/40 w-full justify-center">
                 <span className="text-2xl drop-shadow">🔥</span>
                 <span className="text-lg font-extrabold text-white drop-shadow">{currentStreak} <span className="text-xs font-bold text-fuchsia-100/90">current</span></span>
                 <span className="mx-2 text-blue-100/70 font-extrabold text-lg align-middle">•</span>
                 <span className="text-lg font-extrabold text-white drop-shadow">{streak} <span className="text-xs font-bold text-fuchsia-100/90">longest</span></span>
               </div>
             </div>
-            <div className="flex flex-col items-center w-full min-w-[170px]">
+            <div className="flex flex-col items-center w-full min-w-0 sm:min-w-[170px]">
               <span className="text-xs font-semibold uppercase tracking-wide text-blue-100 mb-1 text-center w-full">Test Date</span>
-              <div className="flex items-center gap-2 px-4 py-2 h-12 min-w-[260px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-fuchsia-400 shadow-lg border-2 border-blue-200/40 w-full justify-center">
+              <div className="flex items-center gap-2 px-2 sm:px-4 py-2 h-12 min-w-0 sm:min-w-[260px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-fuchsia-400 shadow-lg border-2 border-blue-200/40 w-full justify-center">
                 <span className="text-lg font-extrabold text-white drop-shadow whitespace-nowrap">{testDate} <span className="mx-2 text-blue-100/70 font-extrabold text-lg align-middle">•</span> {daysUntilTest} <span className="text-xs font-bold text-blue-100/90">days left</span></span>
               </div>
             </div>
@@ -76,14 +76,14 @@ export default function HeaderWithScore({
         </div>
 
         {/* Condensed Score Line */}
-        <div className="flex items-center justify-between bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="flex items-center gap-4 flex-1">
-            <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center justify-between bg-white/10 backdrop-blur rounded-lg p-3 sm:p-4 gap-3 sm:gap-0">
+          <div className="flex flex-col sm:flex-row items-center gap-4 flex-1 w-full">
+            <div className="flex items-center gap-3 w-full justify-center sm:justify-start">
               <span className="text-2xl font-bold">{currentScore.total}</span>
               <span className="text-xl opacity-75">→</span>
               <span className="text-2xl font-bold">{targetScore.total}</span>
             </div>
-            <div className="flex-1 max-w-md">
+            <div className="flex-1 max-w-full sm:max-w-md">
               <div className="w-full bg-white/20 rounded-full h-2">
                 <div
                   data-testid="readiness-bar"
@@ -98,7 +98,7 @@ export default function HeaderWithScore({
                 ></div>
               </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mt-2 sm:mt-0">
                     <span className="text-sm opacity-90">Readiness:</span>
               <span className={`text-lg font-bold ${getReadinessColor(readiness.overall)}`}>
                 {readiness.overall}%
@@ -107,7 +107,7 @@ export default function HeaderWithScore({
           </div>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="ml-4 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors flex items-center gap-2"
+            className="w-full sm:w-auto ml-0 sm:ml-4 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors flex items-center gap-2 justify-center"
           >
             <span className="text-sm font-semibold">
               {isExpanded ? 'Hide' : 'View'} Details
@@ -130,10 +130,10 @@ export default function HeaderWithScore({
             transition={{ duration: 0.4, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <div className="border-t border-white/20 p-6 bg-black/10">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="border-t border-white/20 p-4 sm:p-6 bg-black/10">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                 {/* Score Breakdown */}
-                <div className="bg-white/10 backdrop-blur rounded-lg p-5">
+                <div className="bg-white/10 backdrop-blur rounded-lg p-4 sm:p-5">
                         <h3 className="font-bold text-lg mb-4">📊 Best Practice Score</h3>
                   <div className="space-y-4">
                     <div>
@@ -183,7 +183,7 @@ export default function HeaderWithScore({
                         </p>
                       </div>
                     </div>
-                    <div className="flex gap-3 mt-3">
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3">
                       <button
                         type="button"
                         className="flex-1 py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold shadow transition-colors focus:outline-none"
@@ -200,9 +200,9 @@ export default function HeaderWithScore({
                   </div>
                 </div>
                 {/* Quick Stats */}
-                <div className="bg-white/10 backdrop-blur rounded-lg p-5">
+                <div className="bg-white/10 backdrop-blur rounded-lg p-4 sm:p-5">
                   <h3 className="font-bold text-lg mb-4">⚡ Quick Stats</h3>
-                  <div className="grid grid-cols-2 gap-3 mb-4">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-4">
                     <div className="bg-white/10 rounded p-3">
                       <p className="text-xs opacity-75 mb-1">Time Studied</p>
                       <p className="text-2xl font-bold">{studyStats.totalHoursStudied}h</p>

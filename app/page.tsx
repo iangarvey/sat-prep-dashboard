@@ -9,7 +9,7 @@ import CollegesCollapse from '@/components/CollapsibleSections/CollegesCollapse'
 export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <main className="container mx-auto px-4 py-8 max-w-7xl">
+      <main className="container mx-auto px-2 sm:px-4 py-6 sm:py-8 max-w-full sm:max-w-7xl">
         {/* Expandable Header with Score & Stats */}
         <div className="mb-6">
           <HeaderWithScore 
